@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RTDETR Starfish and Butterfly Detection
 
 This project trains and tests an RTDETR (Real-Time Detection Transformer) model for detecting starfish and butterflies using Ultralytics.
@@ -34,3 +35,6 @@ python test_rtdetr.py --weights runs/detect/train/weights/best.pt
 ## Results
 Training results will be saved in `runs/detect/train/`
 Test results will be saved in `runs/detect/test/`
+=======
+# Surface-Landmine-Detection
+>>>>>>> 21188f2cce523b9855c4d7ba65ab31a079460a8e
