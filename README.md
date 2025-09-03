@@ -36,4 +36,3 @@ Training results will be saved in `runs/detect/train/`
 Test results will be saved in `runs/detect/test/`
 =======
 # Surface-Landmine-Detection
->>>>>>> 21188f2cce523b9855c4d7ba65ab31a079460a8e
