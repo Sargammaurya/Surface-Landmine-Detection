@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RTDETR Starfish and Butterfly Detection
 
 This project trains and tests an RTDETR (Real-Time Detection Transformer) model for detecting starfish and butterflies using Ultralytics.
