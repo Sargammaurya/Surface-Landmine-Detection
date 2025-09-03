@@ -1,0 +1,10 @@
+# Dataset configuration for starfish and butterfly detection
+path: data  # dataset root dir
+train: images  # train images (relative to 'path') 
+val: val.txt   # val images (using the existing val.txt file)
+
+# Classes
+nc: 2  # number of classes
+names:
+  0: starfish
+  1: butterfly

@@ -1,0 +1,45 @@
+# Training configuration for RTDETR
+model: rtdetr-l.pt  # model path
+data: dataset.yaml  # dataset path
+epochs: 100  # number of epochs
+imgsz: 640  # image size
+batch: 16  # batch size
+workers: 8  # number of workers
+device: 0  # GPU device (0 for cuda:0, cpu for CPU)
+project: runs/detect  # project name
+name: train  # experiment name
+
+# Optimization
+optimizer: AdamW  # optimizer (SGD, Adam, AdamW, RMSProp)
+lr0: 0.001  # initial learning rate
+lrf: 0.01  # final learning rate factor
+momentum: 0.937  # momentum
+weight_decay: 0.0005  # weight decay
+warmup_epochs: 3  # warmup epochs
+warmup_momentum: 0.8  # warmup momentum
+warmup_bias_lr: 0.1  # warmup bias lr
+
+# Augmentation
+hsv_h: 0.015  # HSV-Hue augmentation
+hsv_s: 0.7  # HSV-Saturation augmentation
+hsv_v: 0.4  # HSV-Value augmentation
+degrees: 0.0  # rotation degrees
+translate: 0.1  # translation
+scale: 0.5  # scaling
+shear: 0.0  # shear degrees
+perspective: 0.0  # perspective
+flipud: 0.0  # flip up-down probability
+fliplr: 0.5  # flip left-right probability
+mosaic: 1.0  # mosaic probability
+mixup: 0.0  # mixup probability
+copy_paste: 0.0  # copy-paste probability
+
+# Validation
+val: True  # validate during training
+save_period: -1  # save checkpoint every x epochs (-1 to disable)
+patience: 50  # early stopping patience
+save: True  # save checkpoints
+save_conf: False  # save confidences in labels
+plots: True  # save plots
+overlap_mask: True  # overlap mask
+mask_ratio: 4  # mask downsample ratio
