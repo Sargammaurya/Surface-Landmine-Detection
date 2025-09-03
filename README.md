@@ -30,9 +30,3 @@ python train_rtdetr.py
 ```bash
 python test_rtdetr.py --weights runs/detect/train/weights/best.pt
 ```
-
-## Results
-Training results will be saved in `runs/detect/train/`
-Test results will be saved in `runs/detect/test/`
-=======
-# Surface-Landmine-Detection
